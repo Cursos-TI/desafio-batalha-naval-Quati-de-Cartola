@@ -1,12 +1,27 @@
 #include <stdio.h>
 
-// Desafio Batalha Naval - MateCheck
-// Este código inicial serve como base para o desenvolvimento do sistema de Batalha Naval.
-// Siga os comentários para implementar cada parte do desafio.
-
 int main() {
     // Nível Novato - Posicionamento dos Navios
     // Sugestão: Declare uma matriz bidimensional para representar o tabuleiro (Ex: int tabuleiro[5][5];).
+    int tabuleiro[10][10] = {
+        {0, 1, 2, 3, 4, 5, 6, 7, 8, 9},
+        {1, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+        {2, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+        {3, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+        {4, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+        {5, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+        {6, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+        {7, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+        {8, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+        {9, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+    }
+
+    printf("TABULEIRO BATALHA NAVAL\n");
+
+    for(int i = 0; i <= 10; i++) {
+        printf("%d", tabuleiro[i][i]);
+    }
+
     // Sugestão: Posicione dois navios no tabuleiro, um verticalmente e outro horizontalmente.
     // Sugestão: Utilize `printf` para exibir as coordenadas de cada parte dos navios.
 
