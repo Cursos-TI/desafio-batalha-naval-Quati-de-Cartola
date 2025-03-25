@@ -15,10 +15,10 @@ int main() {
 
     printf("TABULEIRO BATALHA NAVAL\n\n");
 
-    // Imprimir índices da coluna (cabeçalho)
+    // Imprimir índices da coluna, de A-J como uma planilha do excel
     printf("   ");
     for (int j = 0; j < 10; j++) {
-        printf("%d ", j);
+        printf("%c ", 'A' + j);
     }
     printf("\n");
 
