@@ -2,7 +2,7 @@
 
 int main() {
     int tabuleiro[10][10] = {0}; // Inicializa toda a matriz com 0
-
+    
     printf("TABULEIRO BATALHA NAVAL\n\n");
 
     // Imprimir índices da coluna (cabeçalho)
