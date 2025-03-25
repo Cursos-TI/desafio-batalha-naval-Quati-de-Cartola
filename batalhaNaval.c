@@ -18,7 +18,7 @@ int main() {
     // Imprimir índices da coluna, de A-J como uma planilha do excel
     printf("   ");
     for (int j = 0; j < 10; j++) {
-        printf("%c ", 'A' + j);
+        printf("%c ", 'A' + j); // Sp,amdo um caractere com J, fazendo ele seguir um padrão de A - J
     }
     printf("\n");
 
