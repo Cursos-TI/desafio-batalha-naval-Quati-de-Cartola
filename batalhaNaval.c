@@ -6,7 +6,7 @@
 #define MENSAGEM "TABULEIRO BATALHA NAVAL"
 
 int main() {
-    int tabuleiro[LINHAS][COLUNAS]; // Inicializa toda a matriz com 0
+    int tabuleiro[LINHAS][COLUNAS] = {0}; // Inicializa toda a matriz com 0
 
     printf("%s\n", MENSAGEM);
 
