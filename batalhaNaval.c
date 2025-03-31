@@ -18,6 +18,15 @@ int main() {
     }
     printf("\n");
 
+    // Preenchendo a horizontal principal com navios
+    for (int i = 0; i < LINHAS; i++) {
+        tabuleiro[i][i] = 3;
+    }
+    // Preenchendo a horizontal da direita para a esquerda com navios
+    for (int i = LINHAS; i > 0; i--) {
+        tabuleiro[i][i] = 3;
+    }
+
     // Imprimir o tabuleiro
     for (int i = 0; i < LINHAS; i++) {
 
