@@ -39,10 +39,7 @@ int main() {
         
         // Podemos preencher o barco caso ele não ultrapasse o tamanho do tabuleiro
         if (x < LINHAS && y >= 0 && y < COLUNAS) {
-            tabuleiro
-                [x]
-                [y]
-                = 3;
+            tabuleiro[x][y] = 3;
         }
     }
 
