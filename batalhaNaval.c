@@ -8,7 +8,7 @@
 int main() {
     int tabuleiro[LINHAS][COLUNAS]; // Inicializa toda a matriz com 0
 
-    printf("%s\n, MENSAGEM");
+    printf("%s\n", MENSAGEM);
 
     // Imprimir índices da coluna, de A-J como uma planilha do excel
     printf("   ");
@@ -19,7 +19,9 @@ int main() {
 
     // Imprimir o tabuleiro
     for (int i = 0; i < LINHAS; i++) {
+
         printf("%d  ", i); // Índice da linha
+
         for (int j = 0; j < COLUNAS; j++) {
             printf("%d ", tabuleiro[i][j]); // Imprimir cada célula do tabuleiro
         }
