@@ -23,11 +23,17 @@ int main() {
 
     // Preenchendo a horizontal principal com navios
     for (int i = 0; i < MAX_NAVIOS; i++) {
-        tabuleiro[i + INTERVALO_VERTICAL][i] = 3;
+        tabuleiro
+            [i + INTERVALO_VERTICAL]
+            [i]
+            = 3;
     }
     // Preenchendo a horizontal da direita para a esquerda com navios
     for (int i = 0; i < MAX_NAVIOS; i++) {
-        tabuleiro[i + INTERVALO_VERTICAL][(COLUNAS - 1 - i)] = 3;
+        tabuleiro
+            [i + INTERVALO_VERTICAL]
+            [(COLUNAS - 1 - i)]
+            = 3;
     }
 
     // Imprimir o tabuleiro
