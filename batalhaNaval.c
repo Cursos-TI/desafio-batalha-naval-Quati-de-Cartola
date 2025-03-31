@@ -41,7 +41,7 @@ int main() {
         
         // Definição de posição do barco
             int x = i + intervalo_vertical;
-            int y = (COLUNAS - 1 - i) + deslocamento_horizontal;
+            int y = (COLUNAS - 1 - i) - deslocamento_horizontal;
         
         // Limitando o barco no tabuleiro
         if (x < LINHAS && y >= 0 && y < COLUNAS) {
