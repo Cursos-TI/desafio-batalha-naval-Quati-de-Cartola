@@ -3,11 +3,12 @@
 // Algumas constantes
 #define LINHAS   10
 #define COLUNAS  10
+#define MENSAGEM "TABULEIRO BATALHA NAVAL"
 
 int main() {
     int tabuleiro[LINHAS][COLUNAS]; // Inicializa toda a matriz com 0
 
-    printf("TABULEIRO BATALHA NAVAL\n\n");
+    printf("%s\n, MENSAGEM");
 
     // Imprimir índices da coluna, de A-J como uma planilha do excel
     printf("   ");
