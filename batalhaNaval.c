@@ -32,10 +32,18 @@ int main() {
     }
     // Preenchendo a horizontal da direita para a esquerda com navios
     for (int i = 0; i < MAX_NAVIOS; i++) {
-        tabuleiro
-            [i + intervalo_vertical]
-            [(COLUNAS - 1 - i)]
-            = 3;
+        
+        // Definição de posição do barco
+            int x = i + intervalo_vertical;
+            int y = (COLUNAS - 1 - i) + deslocamento_horizontal;
+        
+        // Podemos preencher o barco caso ele não ultrapasse o tamanho do tabuleiro
+        if (x < LINHAS && y >= 0 && y < COLUNAS) {
+            tabuleiro
+                [x]
+                [y]
+                = 3;
+        }
     }
 
     // Imprimir o tabuleiro
