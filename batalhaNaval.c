@@ -5,10 +5,9 @@
 #define COLUNAS   10
 #define MAX_NAVIOS 3 // Quantidade de casas no máximo que um navio pode preencher
 #define MENSAGEM "TABULEIRO BATALHA NAVAL"
-#define INTERVALO_HORIZONTAL 1 // Intervalos para alinhar os navios no tabuleiro
 
 int main() {
-    
+
     int intervalo_vertical      = 1;
     int deslocamento_horizontal = 1;
 
