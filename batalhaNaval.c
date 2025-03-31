@@ -9,6 +9,7 @@ int main() {
     int tabuleiro[LINHAS][COLUNAS] = {0}; // Inicializa toda a matriz com 0
 
     printf("%s\n", MENSAGEM);
+    printf("=======================\n\n");
 
     // Imprimir índices da coluna, de A-J como uma planilha do excel
     printf("   ");
