@@ -23,21 +23,27 @@ int main() {
     }
     printf("\n");
 
-    // Preenchendo a horizontal principal com navios
+    /// Loops de preenchimento de navios na diagonal
+    // DA ESQUERDA PARA A DIREITA
     for (int i = 0; i < MAX_NAVIOS; i++) {
-        tabuleiro
-            [i + intervalo_vertical]
-            [i]
-            = 3;
+
+        // Definição de posição do barco
+            int x = i + intervalo_vertical;
+            int y = i + deslocamento_horizontal;
+
+        // Limitando o barco no tabuleiro
+        if (x < LINHAS && y >= 0 && y < COLUNAS) {
+            tabuleiro[x][y] = 3;
+        }
     }
-    // Preenchendo a horizontal da direita para a esquerda com navios
+    // DA DIREITA PARA A ESQUERDA
     for (int i = 0; i < MAX_NAVIOS; i++) {
         
         // Definição de posição do barco
             int x = i + intervalo_vertical;
             int y = (COLUNAS - 1 - i) + deslocamento_horizontal;
         
-        // Podemos preencher o barco caso ele não ultrapasse o tamanho do tabuleiro
+        // Limitando o barco no tabuleiro
         if (x < LINHAS && y >= 0 && y < COLUNAS) {
             tabuleiro[x][y] = 3;
         }
