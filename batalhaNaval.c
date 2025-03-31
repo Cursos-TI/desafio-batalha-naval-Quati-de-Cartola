@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 // Algumas constantes
-#define LINHAS  = 10;
-#define COLUNAS = 10;
+#define LINHAS   10
+#define COLUNAS  10
 
 int main() {
     int tabuleiro[LINHAS][COLUNAS]; // Inicializa toda a matriz com 0
