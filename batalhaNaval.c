@@ -1,8 +1,9 @@
 #include <stdio.h>
 
 // Algumas constantes
-#define LINHAS   10
-#define COLUNAS  10
+#define LINHAS    10
+#define COLUNAS   10
+#define MAX_NAVIOS 3 // Quantidade de casas no máximo que um navio pode preencher
 #define MENSAGEM "TABULEIRO BATALHA NAVAL"
 
 int main() {
@@ -19,11 +20,11 @@ int main() {
     printf("\n");
 
     // Preenchendo a horizontal principal com navios
-    for (int i = 0; i < LINHAS; i++) {
+    for (int i = 0; i < MAX_NAVIOS; i++) {
         tabuleiro[i][i] = 3;
     }
     // Preenchendo a horizontal da direita para a esquerda com navios
-    for (int i = 0; i < LINHAS; i++) {
+    for (int i = 0; i < MAX_NAVIOS; i++) {
         tabuleiro[i][COLUNAS - 1 - i] = 3;
     }
 
