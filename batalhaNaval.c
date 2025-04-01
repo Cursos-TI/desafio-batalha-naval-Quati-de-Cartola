@@ -5,6 +5,8 @@
 #define COLUNAS   10
 #define MAX_NAVIOS 3 // Quantidade de casas no máximo que um navio pode preencher
 #define MENSAGEM "TABULEIRO BATALHA NAVAL"
+// Definindo o tamanho da matriz de habilidade (5x5)
+#define TAM_HABILIDADE 5
 
 int main() {
 
@@ -13,9 +15,9 @@ int main() {
 
     int tabuleiro[LINHAS][COLUNAS] = {0}; // Inicializa toda a matriz com 0 para não dar erro
     // Efeitos especiais e matrizes
-        int octaedro[5][5] = {0}; 
-        int cone[5][5] = {0};
-        int cruz[5][5] = {0};
+        int octaedro[TAM_HABILIDADE][TAM_HABILIDADE] = {0}; 
+        int cone[TAM_HABILIDADE][TAM_HABILIDADE]     = {0};
+        int cruz[TAM_HABILIDADE][TAM_HABILIDADE]     = {0};
 
     printf("%s\n", MENSAGEM);
     printf("=======================\n\n");
