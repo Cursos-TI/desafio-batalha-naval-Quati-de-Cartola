@@ -30,6 +30,7 @@ int main() {
     }
     printf("\n");
 
+    /*
     /// Loops de preenchimento de navios na diagonal
     // DA ESQUERDA PARA A DIREITA
     for (int i = 0; i < MAX_NAVIOS; i++) {
@@ -55,7 +56,7 @@ int main() {
             tabuleiro[x][y] = 3;
         }
     }
-
+    */
     // O cone se expande para baixo
     for (int i = 0; i < TAM_HABILIDADE; i++) {
 
