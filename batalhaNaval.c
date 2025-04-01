@@ -11,7 +11,7 @@ int main() {
     int intervalo_vertical      = 1;
     int deslocamento_horizontal = 1;
 
-    int tabuleiro[LINHAS][COLUNAS] = {0}; // Inicializa toda a matriz com 0
+    int tabuleiro[LINHAS][COLUNAS] = {0}; // Inicializa toda a matriz com 0 para não dar erro
 
     printf("%s\n", MENSAGEM);
     printf("=======================\n\n");
