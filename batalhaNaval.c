@@ -12,6 +12,10 @@ int main() {
     int deslocamento_horizontal = 1;
 
     int tabuleiro[LINHAS][COLUNAS] = {0}; // Inicializa toda a matriz com 0 para não dar erro
+    // Efeitos especiais e matrizes
+        int octaedro[5][5] = {0}; 
+        int cone[5][5] = {0};
+        int cruz[5][5] = {0};
 
     printf("%s\n", MENSAGEM);
     printf("=======================\n\n");
