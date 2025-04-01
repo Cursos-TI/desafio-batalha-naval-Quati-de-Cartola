@@ -12,6 +12,7 @@ int main() {
 
     int intervalo_vertical      = 1;
     int deslocamento_horizontal = 1;
+    int centro = TAM_HABILIDADE / 2;
 
     int tabuleiro[LINHAS][COLUNAS] = {0}; // Inicializa toda a matriz com 0 para não dar erro
     // Efeitos especiais e matrizes
@@ -52,6 +53,17 @@ int main() {
         // Limitando o barco no tabuleiro
         if (x < LINHAS && y >= 0 && y < COLUNAS) {
             tabuleiro[x][y] = 3;
+        }
+    }
+
+    // O cone se expande para baixo
+    for (int i = 0; i < TAM_HABILIDADE; i++) {
+
+        for (int j = 0; j < TAM_HABILIDADE; j++) {
+
+            if (j >= centro - i && j <= centro + i) {
+                cone[i][j] = 1;
+            }
         }
     }
 
